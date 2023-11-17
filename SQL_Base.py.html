@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>SQL_Base.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+SQL_Base.py</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">sqlite3py</span>
+
+<span class="s1">sqlite3py</span>
+
+<span class="s1">con </span><span class="s2">= </span><span class="s1">sqlite3py</span><span class="s2">.</span><span class="s1">connect</span><span class="s2">(</span><span class="s3">&quot;tutorial.db&quot;</span><span class="s2">)</span>
+<span class="s1">cur </span><span class="s2">= </span><span class="s1">con</span><span class="s2">.</span><span class="s1">cursor</span><span class="s2">()</span>
+<span class="s1">cur</span><span class="s2">.</span><span class="s1">execute</span><span class="s2">(</span><span class="s3">&quot;CREATE TABLE organization(Business, Phone Number, Type of Organization, Resources Available&quot;</span><span class="s2">)</span>
+<span class="s1">cur</span><span class="s2">.</span><span class="s1">execute</span><span class="s2">(</span><span class="s3">&quot;&quot;&quot; 
+            INSERT INTO organization VALUES 
+            (''A &amp; R Salvage', '785-528-9130',  
+            ('Ace Hardware', '785-528-4323',  
+            ('Bockus Real Estate', '785-528-4338',  
+            ('Bowin Electric', '785-528-4612',  
+            ('Branine Chevrolet-Buick', '785-528-3101',  
+            ('Builders Choice', '785-528-4133',  
+            ('Edward Jones Investment', '785-528-8177',  
+            ('Flinthills Beverage', '785-528-4211',  
+            ('Frye's Beauty Salon', '785-528-3113',  
+            ('Harmon Dental', '785-528-3773',  
+            ('John's Barber Shop', '785-528-4406',  
+            ('Long Pipe &amp; Steel, Inc.', '785-528-3356',  
+            ('Mediacom TV &amp; Internet', '800-234-2157',  
+            ('Orbis Corporation', '785-528-4875',  
+            ('Osage Animal Clinic', '785-528-4522',  
+            ('Osage Auto Supply', '785-528-4151',  
+            ('Osage Building Material', '785-528-3914',  
+            ('Osage Garden &amp; Produce', '785-528-4644',  
+            ('Osage Nursing and Rehabilitation', '785-528-3138',  
+            ('Radio Shack', '785-528-8118',  
+            ('Ridge Iron Grill', '785-528-2900',  
+            ('Salt Creek Fitness and Rehab', '785-528-1123',  
+            ('Shcroeder Rexall Drugs, Inc.', '785-528-4322',  
+            ('Smith Construction', '785-528-3261',  
+            ('State Farm Insurance', '785-528-4525',  
+            ('Theel Plumbing, Heating, and Air','785-528-3912',  
+&quot;&quot;&quot;</span><span class="s2">)</span>
+</pre>
+</body>
+</html>
